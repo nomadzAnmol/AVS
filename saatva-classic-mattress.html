@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sifency">
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <!-- Site Title -->
+    <title>Saatva</title>
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/aos.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: unset !important;
+        }
+
+        .main {
+            /* background-color: black; */
+            background-image: url(/nomadz_main/static/img/career_page/Frame69.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .policy__text {
+            padding-top: 7rem;
+        }
+
+        h1 {
+            font-family: Roboto;
+            font-size: 45px !important;
+            font-weight: 700;
+            line-height: 52px;
+            color: white;
+            /* text-align: center; */
+        }
+
+        .policy__text p {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 16px;
+            color: white;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+
+        .table-of-contents {
+            position: sticky;
+            top: 5rem;
+            max-height: calc(100vh - 6rem);
+            overflow-y: auto;
+        }
+
+        .table td {
+            color: white;
+        }
+
+
+        .section {
+            padding-top: 0 !important;
+            padding-top: 5rem;
+            border-bottom: 1px solid #444;
+            scroll-margin-top: 80px;
+            /* Same as offset */
+        }
+
+        .section h2 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-block: 1rem;
+        }
+
+        .container img {
+            margin-block: 1rem;
+        }
+
+        .section p {
+            margin-bottom: 2rem;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #BEBEBE;
+        }
+
+        .section li {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #BEBEBE;
+
+        }
+
+        .main li {
+            list-style: unset !important;
+        }
+
+        .table-of-contents {
+            padding: 20px 4px 20px 24px;
+            gap: 10px;
+            border-radius: 10px;
+            border: 1px solid #FFFFFF1A;
+            color: #181818;
+            background: #181818;
+
+        }
+
+        .table-of-contents a {
+            color: #949090;
+            text-decoration: none;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        .table-of-contents a:hover {
+            color: #bbb1b1 !important;
+        }
+
+        .table-of-contents a.active {
+            color: #fff;
+            /* font-weight: bold; */
+            /* font-size: 16px; */
+        }
+
+        .table-of-contents h5 {
+            color: #fff;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #fff;
+        }
+
+        .main h6 {
+            font-size: 14px !important;
+        }
+
+        .container .row .col-lg-8 {
+            padding: 1rem !important;
+        }
+
+        .star-rating i {
+            color: #FFD700;
+            font-size: 1.25rem;
+        }
+
+        .badge-review {
+            background: #0056b3;
+            color: #fff;
+            font-size: 0.85rem;
+            padding: 0.4rem 0.75rem;
+            border-radius: 50px;
+        }
+
+        .meta-text {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        .social-icons i {
+            font-size: 1.1rem;
+            color: #bdb8b8;
+            margin-right: 12px;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #0056b3;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff5101;
+        }
+
+        .add-box {
+            background-color: #f0f0f0;
+            padding: 0;
+
+        }
+
+        .ad-wrapper {
+            max-width: 300px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            top: 100px;
+            left: 0px;
+        }
+
+
+
+        .ad-header {
+            background: #f0f0f0;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .ad-body {
+
+            color: white;
+            position: relative;
+
+        }
+
+
+
+        .info-icon {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background: white;
+            color: #00bcd4;
+            font-size: 14px;
+            height: 23px;
+            width: 20px;
+            display: grid;
+            place-items: center;
+        }
+
+        .ad-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .ad-body div a {
+            display: block;
+        }
+
+        .ad-body div img {
+            margin: 0px;
+        }
+
+        ;
+        /* xm  */
+        @media screen and (max-width: 991.98px) {
+
+            .policy__text p {
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 27px;
+                color: white;
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            .table-of-contents {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Preloader-->
+    <div class="loader">
+        <div class="cs-loader-line"></div>
+    </div>
+    <!-- End Preloader-->
+
+    <!-- Start Navbar Section -->
+    <header class="cs-site-navbar cs-navbar-style cs_sticky_header">
+        <div class="container">
+            <div class="cs_main_header">
+                <div class="cs_main_header_in">
+                    <div class="cs_main_header_left">
+                        <a href="index.html" class="cs_site_branding">
+                            <img src="assets/img/AVS.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cs_main_header_right">
+                        <div class="cs_nav">
+                            <ul class="cs_nav_list">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+
+                                <li class="menu-item-has-children">
+                                    <a href="">Services +</a>
+                                    <ul>
+                                        <li>
+                                            <a href="services.html">Climate Change Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="services-env.html">Energy & Environmental Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="services-ext.html">Extended Producer Responsibility </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Navbar Section -->
+
+    <div class="main">
+        <main>
+            <!-- <div class="policy__text container">
+                <a
+                    href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                    <h1>Saatva Classic Mattress Review 2025</h1>
+                </a>
+            </div> -->
+
+            <div class="main__wrapper" data-bs-spy="scroll" data-bs-target="#table-of-contents" data-bs-offset="100"
+                tabindex="0">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-2 add-box d-none justify-content-center d-lg-block position-relative">
+                            <div class="ad-wrapper position-sticky  rounded shadow-sm">
+                                <div class="ad-header">Advertisement</div>
+                                <div class="ad-body position-relative">
+                                    <span class="info-icon">&#9432;</span>
+
+                                    <div>
+                                        <a href="#">
+                                            <img src="/assets/img/adobe1.jpg" alt="adobe ad">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Main Content -->
+                        <div class="col-lg-8">
+
+                            <div style="max-width:861px">
+
+
+                                <div id="review" class="section">
+                                    <div class="container p-4 rounded shadow-sm">
+                                        <!-- <h1 class="fw-bold mb-3">Saatva Classic Mattress Review 2025: Hotel-Like Comfort at Home</h1> -->
+                                        <a
+                                            href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                                            <h1>Saatva Classic Mattress Review 2025</h1>
+                                        </a>
+                                        <p class="lead text-white">Can the Saatva Classic still deliver five-star sleep
+                                            at home in 2025? We put it through a fresh round of testing to find out.</p>
+
+                                        <div class="d-flex align-items-center flex-wrap gap-3 mb-3">
+                                            <div class="star-rating">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                            <span class="badge badge-review">Editor's Pick</span>
+                                            <span class="meta-text">By <a href="#"
+                                                    class="text-decoration-none text-primary"
+                                                    style="pointer-events: none;">John
+                                                    Davies</a></span>
+                                            <!-- <span class="meta-text">with <a href="#"
+                                                    class="text-decoration-none text-primary">Diana Kelly
+                                                    Levey</a> &amp; <a href="#"
+                                                    class="text-decoration-none text-primary">Jennifer
+                                                    Nelson</a></span> -->
+                                            <!-- <span class="meta-text">| Updated: april 21, 2025</span> -->
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-4">
+                                            <div class="social-icons">
+                                                <i class="bi bi-facebook"></i>
+                                                <i class="bi bi-twitter-x"></i>
+                                                <i class="bi bi-pinterest"></i>
+                                                <i class="bi bi-envelope-fill"></i>
+                                                <i class="bi bi-flipboard"></i>
+                                            </div>
+                                            <a href="#" style="pointer-events: none;"
+                                                class="text-decoration-none text-primary">
+                                                <i class="bi bi-chat-dots-fill"></i> Comments (4)
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="star" class="sectionn pt-3 pb-3">
+                                    <div class="container">
+                                        <div class="card shadow-sm border-0 rounded-4 p-4 bg-white">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h4 class="fw-bold text-black mb-0">Our Expert Verdict</h4>
+                                                <div class="text-warning fs-5">
+                                                    ★★★★★
+                                                </div>
+                                            </div>
+
+                                            <p class="text-muted">
+                                                We re-evaluated the Saatva Classic and awarded it a perfect full stars.
+                                                Despite a few minor imperfections, it remains a standout in comfort and
+                                                support. After months of testing, our reviewer noted significant pain
+                                                relief and full-body relaxation every night.
+                                                It’s not the coolest mattress, but its temperature regulation is great
+                                                for hot sleepers and those in menopause. If you prefer a classic-feeling
+                                                mattress with robust support and subtle bounce, the Saatva Classic
+                                                excels.
+                                            </p>
+
+
+
+                                            <!-- <div class="row mt-4">
+                                            <div class="col-md-6">
+                                              <h6 class="fw-bold text-black">✔ Pros</h6>
+                                              <ul class="list-unstyled small">
+                                                <li class="text-black">• Extremely comfortable – no break-in needed</li>
+                                                <li class="text-black">• Relieves aches and pains</li>
+                                                <li class="text-black">• Outstanding lower back support</li>
+                                                <li class="text-black">• Breathable & hot-sleeper friendly</li>
+                                                <li class="text-black">• Edge-to-edge stability</li>
+                                                <li class="text-black">• Excellent durability</li>
+                                              </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <h6 class="fw-bold text-danger">✘ Cons</h6>
+                                              <ul class="list-unstyled small">
+                                                <li class="text-black">• 600lbs max weight capacity</li>
+                                                <li class="text-black">• $99 return/exchange fee</li>
+                                              </ul>
+                                            </div>
+                                          </div> -->
+
+                                            <div class="mt-4 border-top pt-3 small text-muted">
+                                                <strong>Why trust us?</strong> Our editors thoroughly test and review
+                                                products to help you make the best decision.
+                                                <!-- <a href="#" class="text-decoration-none text-primary">See how we test →</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="introduction" class="section">
+                                    <h2>Saatva Mattress Review
+                                    </h2>
+                                    <p>Presented by the eco-friendly sleep brand Saatva, the Saatva Classic innerspring
+                                        hybrid is the perfect <a
+                                            href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">mattress</a>
+                                        for your home. As it is handcrafted in America,
+                                        it makes it more popular in the region. Several customers have reviewed this
+                                        <a
+                                            href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">mattress</a>, rating it one of the best to bring home in 2025. </p>
+
+                                    <p>According to reviews from several sleepers, this mattress comes in various
+                                        versions, including the Classic, which is available in three levels: Plush Soft,
+                                        Luxury Firm, and Firm. It also has two different heights, 11.5” and 14.5”, but
+                                        most sleepers have regarded the 11.5” as the most comfortable. </p>
+                                    <p>Moreover, when comparing the Saatva Classic to other mattresses, such as the Bear
+                                        Elite Hybrid, DreamCloud, and The Winkbed, most sleepers have found that the
+                                        Classic mattress doesn’t require a break-in period. As most sleepers have lower
+                                        back, hip, and thigh pain, they are also satisfied with the comfort that the
+                                        Saatva mattress offers. </p>
+                                    <p>The sleepers mostly record the firmness and feel of this classic <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">mattress</a>.
+                                        Despite the competition, the2 <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">Saatva mattress</a> comes with a one-year sleep trial,
+                                        free White Glove Delivery, and a lifetime warranty. With this free delivery,
+                                        sleepers get a free Saatva Classic installation, removal of all shipping
+                                        packaging and their old mattress, along with the option to select a bed frame.
+                                    </p>
+                                    <p>However, one tough competitor of Saatva Classic has been DreamCloud Hybrid, which
+                                        is regarded as the next best option for smaller budgets. At the same time,
+                                        Saatva remains the comfiest with higher build quality. It is also compatible
+                                        with all sleeping positions. </p>
+                                    <p>The Firm Classic is suitable for anyone who weighs between 230 and 300 lbs and
+                                        experiences aches and pain. The Luxury Firm is for anyone who weighs 130-230
+                                        lbs, regardless of their sleeping position. The Plush Soft classic is highly
+                                        recommended if you weigh under 130 lbs and are comfortable sleeping on your side
+                                        or stomach.</p>
+                                    <p>Despite its great build, the Saatva Classic is not recommended for couples whose
+                                        combined weight exceeds 600 pounds. This means that individuals with varying
+                                        weights may not find the mattress suitable. However, there’s Saatva HD, which is
+                                        designed for heavy individuals with a latex hybrid</p>
+                                    <p>Another reason is that the mattress may not be suitable for those with chronic
+                                        back pain and joint pain. The ones with this issue are recommended to try the
+                                        Saatva RX mattress. However, the classic comes into play if you want an
+                                        eco-friendly mattress that also safeguards your lower back during sleep, and
+                                        more. </p>
+                                    <p></p>
+
+
+                                    <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                                        <img src="https://cdn.mos.cms.futurecdn.net/D3fnzqHd6EvRH4VEbx9Uc-1920-80.jpg.webp"
+                                            alt="">
+                                    </a>
+
+
+                                    <small class="text-muted d-block mt-1" style="color: #fff !important;">(Image: ©
+                                        Future)</small>
+
+
+                                </div>
+
+                                <div id="scope" class="section">
+                                    <h2>Price & Benefits Comparison</h2>
+                                    <p>Many people select the Saatva Classic Mattress because it delivers high-end
+                                        comfort with its quality designs at affordable costs. The premium nature of this
+                                        product means its price changes regularly, yet direct analysis of its market
+                                        position is important for consumers. This Classic Mattress offers various price
+                                        points, along with its essential benefits, so we'll examine its full features in
+                                        detail.</p>
+
+
+
+                                    <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                                        <img src="https://cdn.mos.cms.futurecdn.net/BMGy7tNoV4SAEujWDU3We4-1200-80.jpg.webp"
+                                            alt="">
+                                    </a>
+
+                                    <small class="text-muted d-block mt-1 mb-5" style="color: #fff !important;">(Image:
+                                        © Future)</small>
+
+                                    <h6 class="bold" style="font-size: 16px;">Price Breakdown</h6>
+
+                                    <p>Saatva Mattresses, including the Saatva Classic, have elevated pricing which
+                                        exceeds $200 across different sizes, with actual price increase amounting to
+                                        $100 over the last twelve months. Market retail prices of the Saatva Classic
+                                        fluctuate slightly before or after major holiday sales and events throughout a
+                                        given month. The current price listings include the following information: </p>
+
+
+
+                                    <div class="table-responsive mt-4">
+                                        <table class="table table-bordered text-center align-middle">
+                                            <thead class="table-danger">
+                                                <tr>
+                                                    <th>Mattress Name</th>
+                                                    <th>MSRP</th>
+                                                    <th>Sale Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Split Cal King-size beds</td>
+                                                    <td>$2,990</td>
+                                                    <td>$2,590</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cal King size</td>
+                                                    <td>$2,595</td>
+                                                    <td>$2,195</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Split King size variant</td>
+                                                    <td>$2,990</td>
+                                                    <td>$2,590</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King size</td>
+                                                    <td>$2,595</td>
+                                                    <td>$2,195</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Queen size</td>
+                                                    <td>$2,095</td>
+                                                    <td>$1,695</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full size</td>
+                                                    <td>$1,995</td>
+                                                    <td>$1,595</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Twin XL Saatva Classic</td>
+                                                    <td>$1,495</td>
+                                                    <td>$1,095</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Twin size</td>
+                                                    <td>$1,395</td>
+                                                    <td>$995</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p>This year has seen a major price increase for full-size mattresses, with the MSRP
+                                        rising from $1,595 to $1,995. The company gives permanent discounts to its
+                                        consumers, which reduces the product price. Black Friday sales let customers
+                                        access savings of up to $400, which supplements the typical price reductions of
+                                        $200 to $300 on all Saatva mattress sizes. During the sales event, the
+                                        queen-size mattress is reduced to a minimum of $1,695 from its original price of
+                                        $2,095. This represents a great purchasing opportunity when customers find
+                                        discounts. </p>
+                                    <p>Customers receive a 180-night sleep trial and lifetime warranty on the Saatva
+                                        Classic Mattress for a payment of $99. Free White Glove Delivery serves as both
+                                        setup and old mattress removal assistance, providing a streamlined service to
+                                        customers. </p>
+                                    <p>People seeking comfort and support in their beds will appreciate the Saatva
+                                        Classic because it is made from environmentally responsible materials, including
+                                        organic cotton. Saatva devotes its energy to lowering its carbon footprint
+                                        through dedicated sustainability programs that demonstrate its environmental
+                                        protection initiatives. A mattress return program associated with your purchase
+                                        allows veterans' shelters to receive used mattresses, and you can also offer
+                                        them to team members' households to maximize the benefits of your purchase.</p>
+
+                                </div>
+
+                                <div id="accountable" class="section">
+                                    <h2>Design & Features Comparison</h2>
+                                    <p>The Saatva Classic represents a premium hybrid innerspring mattress that combines
+                                        foams with coils to achieve a perfect balance between comfort, support, and
+                                        durability. Saatva positions the Saatva Classic mattress as its primary product
+                                        because it brings outstanding value to its customers. Outstanding sleeper
+                                        profile adaptability is present in this mattress because it incorporates
+                                        premium, high-end components along with exceptional user customization
+                                        capabilities.</p>
+
+                                    <h6 class="bold">Customization & Build Options</h6>
+                                    <p>Saatva Classic stands out because it enables customers to personalize their
+                                        selections from various options. The mattress offers three different levels of
+                                        firmness for customers to choose from.</p>
+                                    <ul>
+                                        <li>Plush Soft for a cushier, sink-in feel</li>
+                                        <li>Luxury Firm for a balanced medium feel (their most popular option)</li>
+                                        <li>Firm for extra support</li>
+
+                                    </ul>
+
+                                    <p>Saatva Classic customers can choose between two height profiles: 11.5 inches or
+                                        14.5 inches. The coil layers differ exclusively by height while delivering
+                                        consistent material quality across the entire luxury firmness scale. The
+                                        mattress range includes sizes from Twin to Split California King, offering
+                                        suitable options for different bedroom layouts and sleep preferences.</p>
+
+                                    <h6>Inside the Mattress</h6>
+                                    <p>The five individual layers of the Saatva Classic were designed with specific
+                                        functions in mind. On top of this mattress lies a 3-inch cushion made from
+                                        organic cotton, which provides a soft, ventilated surface. The middle third
+                                        features zoned quilting that enhances support for the lower back region, along
+                                        with an antimicrobial finish that helps maintain the surface's sanitary
+                                        condition.</p>
+                                    <p>The CertiPUR-US certified memory foam layers inhabit the center third of the
+                                        mattress for spinal alignment, which earns this model a top position for back
+                                        pain relief.</p>
+                                    <p>The mattress foundation requires more than one type of coil structure system. A
+                                        set of 14.5-gauge steel coils, wrapped individually in recycled steel, supports
+                                        the body shape and minimizes movement. These coil groups maintain body stability
+                                        across the central section by using firmer support in their lumbar area. The
+                                        framework includes bottom layers consisting of 13-gauge tempered steel coils
+                                        that are oven-heated for durability and long-term stability, with resistance to
+                                        sagging.</p>
+                                    <p>The mattress benefits from high-density foam encasements that protect both its
+                                        edges and strengthen the entire framework.</p>
+
+                                    <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                                        <img src="/assets/img/saatva1.png" alt="">
+                                    </a>
+                                    <small class="text-muted d-block mt-1 mb-2" style="color: #fff !important;">(Image:
+                                        © Future)</small>
+
+
+                                </div>
+
+                                <div id="personal" class="section">
+                                    <h2>Support & Comfort Comparison</h2>
+                                    <p>Select from three firmness levels of the Saatva Classic to choose support and
+                                        comfort that match individual sleep preferences and body size. Smaller and side
+                                        sleepers who seek a soft contact surface will find the Plush Soft (3/10
+                                        firmness) suitable because it provides deep contouring and body-conforming
+                                        support.</p>
+                                    <p>The Luxury Firm, rated 5–7/10 on the firmness scale, has become the top pick
+                                        because it strikes a comfortable balance that accommodates various sleeping
+                                        styles, especially those who prefer soft or medium-firm mattresses or are
+                                        mindful of their spine. Stomach sleepers, along with individuals who weigh more
+                                        than 500 pounds, should opt for the Firm version (8/10) because it provides a
+                                        higher floating sensation. Saatva advises using their HD version for weights
+                                        exceeding 500 pounds.</p>
+                                    <p>During our Luxury Firm model assessment, we discovered that this version
+                                        maintained perfect spinal alignment while providing even weight distribution
+                                        across the sleep surface. Pearl felt soft under the body and avoided complete
+                                        sinking by using its Euro pillow top technology, which, combined with the
+                                        responsive dual-coil system, provided added buoyancy.</p>
+                                    <p>Traditional innerspring mattress users, along with most of the participants,
+                                        experienced quick comfort during tryouts with the mattress, and this particular
+                                        bed found perfect compatibility with their existing sleeping habits. Users of
+                                        memory foam need time to adjust to lower bounce levels, but they can still get a
+                                        good night's sleep during their first night on the mattress. </p>
+                                </div>
+
+
+                                <div id="utilize" class="section">
+                                    <h2>Performance Overview</h2>
+
+
+                                    <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                                        <img src="/assets/img/saatva3.png" alt="">
+                                    </a>
+
+                                    <small class="text-muted d-block mt-1 mb-2" style="color: #fff !important;">(Image:
+                                        © Future)</small>
+
+
+
+                                    <ul>
+                                        <li class="mb-4">
+                                            <p class="mb-1">
+
+                                                <span class="feature-title">Comfort & Support:</span>
+                                                <span class="star-rating">★★★★★</span>
+                                            </p>
+                                            <p class="ms-4">
+                                                Exceptional comfort across all sleep positions. The mattress showed no
+                                                points of discomfort while releasing pressure effectively on the hips,
+                                                yet also effectively supported the thighs and lower back. The spinal
+                                                alignment remained stable regardless of body weight, ranging from 130 to
+                                                285 pounds.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-1">
+
+                                                <span class="feature-title">Motion Isolation:</span>
+                                                <span class="star-rating">★★★★★</span>
+                                            </p>
+                                            <p class="ms-4">
+                                                Excellent for a hybrid mattress. Drop testing, along with live use,
+                                                resulted in minimal motion transfer during evaluations, where vigorous
+                                                movements only transmitted to objects that fell within a 4-inch range.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-1">
+
+                                                <span class="feature-title">Temperature Regulation:</span>
+                                                <span class="star-rating">★★★★★</span>
+                                            </p>
+                                            <p class="ms-4">
+                                                A temperature-neutral sleeping position is achieved through the hybrid
+                                                combination of breathable coils and an organic cotton cover. The
+                                                mattress functions well for people who sleep comfortably at both extreme
+                                                temperatures, yet lacks cooling mechanisms. </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-1">
+
+                                                <span class="feature-title">Edge Suppor:</span>
+                                                <span class="star-rating">★★★★★</span>
+                                            </p>
+                                            <p class="ms-4">
+                                                Outstanding edge stability. Testers experienced no sagging while lying
+                                                or sitting at any part of the sleeping surface. The perimeter maintained
+                                                its firmness, no matter the weight, which reached 56lb. </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-1">
+
+                                                <span class="feature-title">Durability:</span>
+                                                <span class="star-rating">★★★★★</span>
+                                            </p>
+                                            <p class="ms-4">
+                                                Long-lasting build with handcrafted details. The mattress has shown few
+                                                signs of wear over four years. Surface maintenance requires rotation
+                                                between three and six months.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="information" class="section">
+                                    <h2>Warranty Overview
+                                    </h2>
+
+                                    <p>The lifetime warranty that Saatva offers with the Classic serves as an
+                                        exceptional feature, providing you with assurance throughout your purchase.
+                                        Here’s what it means:</p>
+                                    <p>During your first two years, Saatva will provide a free replacement for your
+                                        defective mattress.
+                                        From year three onward, Saatva provides mattress recovery with repair services
+                                        through a processing fee of $149.
+                                    </p>
+                                    <p>Saatva offers the Fairness Replacement Option as an alternative to repair service
+                                        for customers.</p>
+                                    <p>In around 3 to 5 years, you can get a brand-new Classic for 50% off the original
+                                        price.
+                                        The payment amount for replacement during these years stands at 60% of your
+                                        initial price.
+                                        The Fairness Replacement Option, within its original price, consists of the
+                                        following payment schedule: Years 11-15 offer an 80% discount on the original
+                                        price.
+                                    </p>
+                                    <p>You can maintain your original mattress while Saatva applies a delivery fee of
+                                        $99. The Fairness Replacement Option provides you with a unique replacement
+                                        offer, but it requires precise matches in product dimensions, height, and
+                                        firmness to your original product.</p>
+                                    <p>The warranty may become void when using the mattress with incompatible bases
+                                        because slats must stay under 4" apart. Online users of Saatva access all
+                                        promotional discount details through the company's interface.</p>
+
+
+
+                                </div>
+
+
+                                <div id="reveal" class="section">
+                                    <h2>White Glove Delivery
+                                    </h2>
+
+                                    <p>Saatva offers free White Glove Delivery with every Classic mattress. A
+                                        professional team will deliver it flat (not rolled in a box) to your chosen
+                                        room, set it up, and remove all packaging.
+                                    </p>
+                                    <p>You can also request free removal of your old mattress and base—just check the
+                                        box at checkout. Note: Saatva won’t remove waterbed bases, adjustable bases,
+                                        damaged/stained items, Sleep Number frames, or headboards/footboards.</p>
+                                    <p>This level of service is rare—only Tempur-Pedic and Stearns & Foster match it for
+                                        free. Most others, like GhostBed or Nectar, charge $100 to $279 for the same
+                                        perk.</p>
+                                </div>
+
+                                <div id="managed" class="section">
+                                    <h2>Should You Buy the Saatva Classic Mattress?
+                                    </h2>
+                                    <p>People who want a traditional bouncy feel identical to hotel mattresses should
+                                        strongly consider buying the Saatva Classic. This handcrafted mattress breathes
+                                        evenly while providing stellar isolation against movement, and testing results
+                                        that earned high marks throughout our assessments. It works excellently for both
+                                        families and couples, but please follow the weight restriction of 600 pounds.
+                                    </p>
+                                    <p>The Saatva Classic mattress provides perfect comfort for individual sleepers and
+                                        luxury mattress quality for anyone who avoids nighttime heat. People dealing
+                                        with persistent back and joint pain should choose the Saatva RX mattress because
+                                        it provides stronger pressure relief solutions.</p>
+                                    <p>Buy the Saatva Classic if you're looking for luxury comfort and breathability,
+                                        along with an excellent price.</p>
+
+
+                                    <a
+                                        href="https://secureconv-ec.com/?a=258028&amp;c=399744&amp;co=318328&amp;mt=7&amp;s1=2&amp;s2=%7Bclick_id%7D">
+                                        <img src="/assets/img/saatva2.png" alt="">
+                                    </a>
+
+
+                                    <small class="text-muted d-block mt-1 mb-2" style="color: #fff !important;">(Image:
+                                        © Future)</small>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- Add more sections as needed -->
+                        </div>
+
+                        <!-- Table of Contents -->
+                        <div class="col-lg-2  d-flex justify-content-center d-lg-block  add-box position-relative">
+
+                            <div class="ad-wrapper rounded position-sticky shadow-sm">
+                                <div class="ad-header">Advertisement</div>
+                                <div class="ad-body position-relative">
+                                    <span class="info-icon">&#9432;</span>
+
+
+                                    <div>
+                                        <a href="#">
+                                            <img src="/assets/img/adobe2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <nav id="table-of-contents" style="max-width:340px" class="table-of-contents">
+                                <h5>Table of Content</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#review">1. Avs Review  </a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a class="nav-link active" href="#review">1. Review </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#introduction">1. Saatva Mattress Review </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#scope">2. Price & Benefits Comparison</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#accountable">3. Design & Features Comparison</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#personal">4. Support & Comfort Comparison</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#utilize">5. Performance Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#information">6. Warranty Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#reveal">7. White Glove Delivery
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#managed">8. Should You Buy the Saatva Classic
+                                            Mattress?</a>
+                                    </li>
+                                </ul>
+                            </nav> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="cs-footer p-t-10 p-b-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 cs-footer-item1">
+                    <div class="footer-item">
+                        <div class="p-b-2 wow animate__fadeInUp" data-wow-duration="0.5s">
+                            <img src="assets/img/AVS.png" width="70" alt="">
+                        </div>
+                        <h6>Corporate Office</h6>
+                        <p class="f-address m-r-5">1751 E, Sushant Lok-1,Gurugram, Haryana - 122002</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="footer-item p-l-2">
+                        <h5>Quick Link</h5>
+                        <ul class="p-t-1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Service</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="footer-item">
+                        <div class="f-contact-info">
+                            <h6>Call Us</h6>
+                            <h3 class="f-number wow animate__fadeInUp" data-wow-duration="0.5s">+91 92205 92559</h3>
+                            <!-- <h3 class="f-number wow animate__fadeInUp" data-wow-duration="0.7s"></h3> -->
+                            <div class="m-t-2rem p-tb-2 b-tb-1px f-number wow animate__fadeInUp"
+                                data-wow-duration="0.9s">
+                                <h6>Drop Us Message</h6>
+                                <span class="f-mail">connect@avsconsultant.com</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Scroll To Top -->
+    <a class="to-top" href="#">
+        <svg width="70" height="70" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="49.0645" cy="49.1549" r="47.8649" stroke="#393939" />
+            <path d="M64.1471 57.8606L49.4516 40.4492L33.9823 57.8606" stroke="#CCCCCC" />
+        </svg>
+    </a>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('#table-of-contents .nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const viewportTrigger = window.scrollY + window.innerHeight * 0.4;
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    if (viewportTrigger >= sectionTop && viewportTrigger < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+
+
+
+
+    </script>
+
+
+    <!-- Script -->
+    <script src="assets/js/plugins/jQuery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="assets/js/plugins/counter.js"></script>
+    <script src="assets/js/plugins/anime.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Script -->
+
+
+
+
+</body>
+
+</html>
