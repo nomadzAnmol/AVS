@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: public_html/   # Adjust the source folder if necessary
+  - source: /   # Adjust the source folder if necessary
     destination: /var/www/avsconsultant.com/public_html
 hooks:
   ApplicationStop:
